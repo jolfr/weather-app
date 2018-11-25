@@ -1,11 +1,11 @@
 import React from 'react';
-import "../scss/DayCard.scss";
+import "../css/DayCard.css";
 
 export default class CardOverview extends React.Component {
     render() {
         return (
             <div >
-                <h1 id="CardOverview">{this.props.day}</h1>
+                <h1 className="CardOverview">{this.props.day}</h1>
             </div>
         );
     }
