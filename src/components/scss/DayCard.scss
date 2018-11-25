@@ -1,0 +1,23 @@
+
+
+$height: 500;
+$width: 300;
+
+#CardOverview {
+
+  height: $height;
+  width: $width;
+  color: red;
+
+  background-color: #282c34;
+
+}
+
+#CardDetail {
+  height: $height;
+  width: $width;
+
+  background-color: #61dafb;
+
+  //border: ;
+}
