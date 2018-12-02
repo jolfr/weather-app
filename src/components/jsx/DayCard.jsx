@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CardOverview from 'CardOverview';
-import CardDetail from 'CardDetail';
+import CardOverview from './CardOverview';
+import CardDetail from './CardDetail'
+import "../css/DayCard.css";
 
-export default class DayCard extends React.Component {
+class DayCard extends React.Component {
     render() {
         return (
-            <div>
+            <div className='Card'>
                 <CardOverview>
 
                 </CardOverview>
@@ -17,7 +18,9 @@ export default class DayCard extends React.Component {
             </div>
         );
     }
-};
+}
+
+export default DayCard;
 
 DayCard.propTypes = {
     day : PropTypes.oneOf(['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']).isRequired,
