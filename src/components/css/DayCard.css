@@ -18,6 +18,16 @@
 .CardDetail {
 
     background-color: #61dafb;
+}
 
-//border: ;
+.WeatherGraphicContainer {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+}
+
+.WeatherGraphic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
