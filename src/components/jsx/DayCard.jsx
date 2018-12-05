@@ -24,7 +24,7 @@ export default DayCard;
 
 DayCard.propTypes = {
     day : PropTypes.oneOf(['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']).isRequired,
-    weather : PropTypes.oneOf(['SUN', 'RAIN', 'WIND', 'SNOW']).isRequired,
+    weather : PropTypes.oneOf(['FULL CLOUD', 'PART CLOUD', 'RAIN', 'SNOW','SUN','THUNDER']).isRequired,
     currentTemp : PropTypes.number.isRequired,
     highTemp : PropTypes.number.isRequired,
     lowTemp : PropTypes.number.isRequired,

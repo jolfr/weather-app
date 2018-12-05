@@ -1,6 +1,10 @@
 import React from 'react';
 import "../css/DayCard.css";
-import Img from 'reac'
+import Img from 'react-image';
+
+const overviewColor = {
+    backgroundColor: '#8c8c8c'
+};
 
 export const getGraphic = (weather) => {
     switch (weather) {
@@ -24,10 +28,11 @@ export const getGraphic = (weather) => {
 class CardOverview extends React.Component {
     render() {
         return (
-            <div className='Card'>
-                <div className="CardOverview">
-                    <div>
-                        <image ></image>
+            <div className='Card' style={overviewColor}>
+                <div className='CardOverview'>
+                    <h1>{this.props.day}</h1>
+                    <div className='WeatherGraphicContainer'>
+                        <Img src={'./weather/' + getGraphic(this.props.weather)}/>
                     </div>
                 </div>
             </div>
