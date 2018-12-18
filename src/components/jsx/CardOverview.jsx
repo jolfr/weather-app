@@ -34,6 +34,8 @@ class CardOverview extends React.Component {
                     <div className='WeatherGraphicContainer'>
                         <Img src={'./weather/' + getGraphic(this.props.weather)}/>
                     </div>
+                    <h2>{this.props.currentTemp}&#176;</h2>
+                    <h3>{this.props.highTemp}&#176; | {this.props.lowTemp}&#176;</h3>
                 </div>
             </div>
         );
